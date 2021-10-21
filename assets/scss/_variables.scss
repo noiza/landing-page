@@ -1,0 +1,40 @@
+// Variables
+
+// Color system
+$green: #02897a;
+$blue-dark: #1b1642;
+
+$primary: $green;
+
+
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25, // 4px
+  2: $spacer * .5, // 8px
+  3: $spacer, // 16px
+  4: $spacer * 1.5, // 24px
+  5: $spacer * 2, // 32px
+  6: $spacer * 2.5, // 40px
+  7: $spacer * 3, // 48px
+  8: $spacer * 4.5, // 72px
+  9: $spacer * 6, // 96px
+  10: $spacer * 7.5, // 120px
+) !default;
+
+
+
+// Links
+$link-decoration: none;
+$link-hover-color: none;
+$link-hover-decoration: underline;
+
+
+
+// Navbar
+$navbar-nav-link-padding-x: 1rem;
+$navbar-light-color: $blue-dark;
+$navbar-light-active-color: $green;
+$navbar-light-hover-color: $green;

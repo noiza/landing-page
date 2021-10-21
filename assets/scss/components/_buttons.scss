@@ -1,0 +1,16 @@
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    color: $white;
+    
+    &:hover {
+      // background-color: $white;
+      color: $white;
+    }
+  }
+
+  .btn-outline-#{$color} {
+    &:hover {
+      color: $white;
+    }
+  }
+}

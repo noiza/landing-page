@@ -1,0 +1,31 @@
+// Navigation
+.navbar-nav {
+  .nav-link {
+    font-weight: 600;
+  }
+}
+
+// Hero
+.hero {
+  @include bg-img('../images/test-image.jpg');
+}
+
+// Features
+
+// Pricing
+.pricing {
+  @include bg-skew;
+
+  ul {
+    @include list-checked;
+  }
+}
+
+// Brands
+
+// Footer
+footer {
+  a {
+    color: $secondary;
+  }
+}

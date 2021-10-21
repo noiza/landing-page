@@ -1,0 +1,63 @@
+@mixin bg-skew {
+  position: relative;
+
+  &::before{
+    content: "";
+    background-color: #e8f5fe;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(3deg);
+    // transform-origin: top left;
+    z-index: -1;
+  }
+}
+
+@mixin bg-img($img-url) {
+  background-image: url($img-url);
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  color: $white;
+
+  &::before {
+    content: "";
+    background-image: linear-gradient(310deg, #141727, #3a416f);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@mixin list-checked {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    padding-left: 1.2rem;
+    position: relative;
+    margin-bottom: 0.6rem;
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: $primary;
+      border-radius: 50%;
+      left: 0;
+      position: absolute;
+      top: 8px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}

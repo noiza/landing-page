@@ -1,0 +1,14 @@
+// Custom variables
+@import 'variables';
+
+// Bootstrap core
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Custom mixins
+@import 'mixins';
+
+// Components
+@import 'components/buttons';
+
+// Sections
+@import 'sections';
